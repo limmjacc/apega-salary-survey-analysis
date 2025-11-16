@@ -1,12 +1,12 @@
 # apega-salary-survey-analysis
 
-A project to collect and archive APEGA Salary Survey PDFs for analysis and research.
+A project to collect and archive APEGA Salary Survey PDFs for analysis and research. APEGA discontinued the salary survery early 2025.
 
 ## Current Status (Nov 2025)
 
 **Available PDFs:**
 - `docs/2020/` — apega_salary_survey_2020.pdf (member report)
-- `docs/2021/` — apega_salary_survey_2021.pdf (member report)
+- `docs/2021/` — apega_salary_survey_2021.pdf (member report, different format)
 - `docs/2022/` — apega_salary_survey_2022.pdf (member report)
 - `docs/2023/` — apega_salary_survey_2023.pdf (member report)
 - `docs/2024/` — apega_salary_survey_2024.pdf (salary survey, scraped from Scribd)
@@ -19,6 +19,9 @@ A project to collect and archive APEGA Salary Survey PDFs for analysis and resea
 ### docs/
 - `docs/YYYY/apega_salary_survey_YYYY.pdf` — Archived salary survey PDFs, organized by year.
 - `docs/2013-2019/README.txt` — Note on why 2013–2019 PDFs are unavailable.
+
+### tools/
+- `responsibility-level-tool.xlsm` — Tool to assess responsibilty level.
 
 ### scripts/
 - `scripts/download_pdfs.py` — Download available PDFs (2020–2024) from APEGA and Internet Archive.
