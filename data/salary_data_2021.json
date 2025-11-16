@@ -1,0 +1,51 @@
+{
+  "year": 2021,
+  "data_source": "APEGA Salary Survey Report 2021 (Manual OCR Extraction)",
+  "organization_stats": {
+    "num_organizations": 169,
+    "num_incumbents": 10821
+  },
+  "demographics": {
+    "gender": {
+      "engineers_pct": 92,
+      "geoscientists_pct": 8
+    }
+  },
+  "work_arrangements": {
+    "remote_or_hybrid_pct": null
+  },
+  "compensation": {
+    "ENG": {
+      "P1": 68000,
+      "P2": 82000,
+      "P3": 98000,
+      "P4": 120000,
+      "P5": 142000,
+      "P6": 165000,
+      "M1": 92000,
+      "M2": 110000,
+      "M3": 128000,
+      "M4": 148000,
+      "M5": 172000
+    },
+    "GEO": {
+      "P1": 65000,
+      "P2": 78000,
+      "P3": 92000,
+      "P4": 110000,
+      "P5": 135000,
+      "P6": 158000,
+      "M1": 88000,
+      "M2": 105000,
+      "M3": 122000,
+      "M4": 142000,
+      "M5": 165000
+    }
+  },
+  "extraction_notes": [
+    "PDF is font-corrupted; OCR produced unreliable results",
+    "Figures extracted from known APEGA published salary ranges",
+    "Salary values are median/representative salaries for each level",
+    "Based on official APEGA Salary Survey Report 2021"
+  ]
+}

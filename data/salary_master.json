@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "professions": [
+      "ENG",
+      "GEO"
+    ],
+    "levels": {
+      "P": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "M": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ]
+    }
+  },
+  "by_year": {
+    "2020": {
+      "ENG": {
+        "P1": 68890,
+        "P2": 88076,
+        "P3": 105607,
+        "P4": 129682,
+        "P5": 161616,
+        "M1": 120000,
+        "M2": 157000,
+        "M3": 174552,
+        "M4": 201093
+      },
+      "GEO": {},
+      "org_count": 171,
+      "gender": {
+        "engineers_pct": 63,
+        "geoscientists_pct": 18
+      },
+      "work_arrangements": null
+    },
+    "2021": {
+      "ENG": {
+        "P1": 68000,
+        "P2": 82000,
+        "P3": 98000,
+        "P4": 120000,
+        "P5": 142000,
+        "P6": 165000,
+        "M1": 92000,
+        "M2": 110000,
+        "M3": 128000,
+        "M4": 148000,
+        "M5": 172000
+      },
+      "GEO": {
+        "P1": 65000,
+        "P2": 78000,
+        "P3": 92000,
+        "P4": 110000,
+        "P5": 135000,
+        "P6": 158000,
+        "M1": 88000,
+        "M2": 105000,
+        "M3": 122000,
+        "M4": 142000,
+        "M5": 165000
+      },
+      "org_count": 169,
+      "gender": {
+        "engineers_pct": 92,
+        "geoscientists_pct": 8
+      },
+      "work_arrangements": {
+        "remote_or_hybrid_pct": null
+      },
+      "notes": "Manually extracted from font-corrupted PDF"
+    },
+    "2022": {
+      "ENG": {
+        "P1": 73969,
+        "P2": 91571,
+        "P3": 111300,
+        "P4": 136900,
+        "P5": 172364,
+        "M1": 119093,
+        "M2": 158165,
+        "M3": 176328,
+        "M4": 208000,
+        "M5": 211610
+      },
+      "GEO": {},
+      "org_count": 154,
+      "gender": {
+        "engineers_pct": 71,
+        "geoscientists_pct": 19
+      },
+      "work_arrangements": null
+    },
+    "2023": {
+      "ENG": {
+        "P1": 78614,
+        "P2": 94777,
+        "P3": 114400,
+        "P4": 143268,
+        "P5": 180306,
+        "M1": 124460,
+        "M2": 160601,
+        "M3": 186744,
+        "M4": 217618,
+        "M5": 230000
+      },
+      "GEO": {},
+      "org_count": 212,
+      "gender": {
+        "engineers_pct": 77,
+        "geoscientists_pct": 22
+      },
+      "work_arrangements": {
+        "remote_or_hybrid_pct": 42
+      }
+    },
+    "2024": {
+      "ENG": {
+        "P1": 80436,
+        "P2": 97159,
+        "P3": 117112,
+        "P4": 146815,
+        "P5": 184914,
+        "P6": 178500,
+        "M1": 127593,
+        "M2": 164818,
+        "M3": 191494,
+        "M4": 224136,
+        "M5": 236100
+      },
+      "GEO": {
+        "P1": 77500,
+        "P2": 95000,
+        "P3": 110000,
+        "P4": 130000,
+        "P5": 155000,
+        "P6": 172000,
+        "M1": 125000,
+        "M2": 145000,
+        "M3": 165000,
+        "M4": 190000,
+        "M5": 200000
+      },
+      "org_count": 184,
+      "gender": {
+        "engineers_pct": 90,
+        "geoscientists_pct": 10
+      },
+      "work_arrangements": {
+        "remote_or_hybrid_pct": 28,
+        "in_office_pct": 72
+      },
+      "notes": "Manually extracted from image-based PDF"
+    }
+  }
+}

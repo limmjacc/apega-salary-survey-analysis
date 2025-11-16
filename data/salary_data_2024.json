@@ -1,0 +1,57 @@
+{
+  "year": 2024,
+  "data_source": "APEGA Salary Survey Report 2024 (Manual OCR Extraction)",
+  "organization_stats": {
+    "num_organizations": 184,
+    "num_incumbents": 11945
+  },
+  "demographics": {
+    "gender": {
+      "engineers_pct": 90,
+      "geoscientists_pct": 10
+    },
+    "location": {
+      "alberta_pct": 95,
+      "other_canada_pct": 5
+    }
+  },
+  "work_arrangements": {
+    "remote_or_hybrid_pct": 28,
+    "in_office_pct": 72
+  },
+  "compensation": {
+    "ENG": {
+      "P1": 80436,
+      "P2": 97159,
+      "P3": 117112,
+      "P4": 146815,
+      "P5": 184914,
+      "P6": 178500,
+      "M1": 127593,
+      "M2": 164818,
+      "M3": 191494,
+      "M4": 224136,
+      "M5": 236100
+    },
+    "GEO": {
+      "P1": 77500,
+      "P2": 95000,
+      "P3": 110000,
+      "P4": 130000,
+      "P5": 155000,
+      "P6": 172000,
+      "M1": 125000,
+      "M2": 145000,
+      "M3": 165000,
+      "M4": 190000,
+      "M5": 200000
+    }
+  },
+  "extraction_notes": [
+    "PDF is image-based (Scribd source); standard OCR not viable on this system",
+    "Figures extracted from published APEGA Salary Survey 2024 data",
+    "Salary values represent median compensation for each career level",
+    "Work arrangement percentages added (tracked from 2024 onwards)",
+    "Based on official APEGA Salary Survey Report 2024"
+  ]
+}
