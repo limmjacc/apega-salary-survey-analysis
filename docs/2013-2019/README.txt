@@ -1,0 +1,1 @@
+These APEGA Salary Survey PDFs for 2013 through 2019 could not be recovered by automated archive searches (Wayback, Google Cache, Archive.org, academic mirrors).
