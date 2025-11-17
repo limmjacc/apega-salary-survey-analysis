@@ -2,6 +2,10 @@
 """
 Advanced APEGA salary table parser - extracts structured compensation data.
 Handles year-specific format variations and builds normalized salary dataset.
+
+Status: Active
+Usage: python scripts/parse_salary_tables.py
+Output: `data/salary_master.json` (consolidated dataset)
 """
 
 import os

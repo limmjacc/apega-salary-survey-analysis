@@ -85,7 +85,7 @@ def save_results(data):
     output_path = OUTPUT_DIR / 'salary_data_2021.json'
     with open(output_path, 'w') as f:
         json.dump(data, f, indent=2)
-    print(f"✓ Saved 2021 extraction to: {output_path}")
+    print(f"Saved 2021 extraction to: {output_path}")
     
     # Update master file
     master_path = OUTPUT_DIR / 'salary_master.json'
@@ -104,7 +104,7 @@ def save_results(data):
         
         with open(master_path, 'w') as f:
             json.dump(master, f, indent=2)
-        print(f"✓ Updated salary_master.json with 2021 data")
+        print(f"Updated salary_master.json with 2021 data")
     
     return output_path
 
@@ -131,4 +131,4 @@ if __name__ == '__main__':
     
     save_results(data)
     print(f"\n{'='*70}")
-    print("✓ 2021 data extraction complete")
+    print("2021 data extraction complete")

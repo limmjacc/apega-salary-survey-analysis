@@ -2,6 +2,11 @@
 """
 Extract and parse salary data from APEGA PDFs comprehensively.
 Handles tables, text blocks, and structured data extraction.
+
+Status: Active
+Usage: python scripts/extract_salary_data.py
+Output: `data/<year>_raw_tables.json`, and parsed salary tables in memory
+Note: This is the main parser used during automated table extraction.
 """
 
 import os

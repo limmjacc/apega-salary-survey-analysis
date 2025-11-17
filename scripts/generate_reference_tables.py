@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
 Generate quick reference tables for salary forecasts - markdown export.
+
+Status: Active
+Usage: python scripts/generate_reference_tables.py
+Output: Markdown table printed to stdout
 """
 
 import json

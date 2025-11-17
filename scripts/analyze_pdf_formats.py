@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
 Analyze 2021 and 2024 PDF formats to understand data extraction challenges.
+
+Status: Active
+Usage: python scripts/analyze_pdf_formats.py
+Output: Console diagnostic; used for identifying text vs image PDFs
 """
 
 import pdfplumber

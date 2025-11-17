@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Verify all cleaned data files are valid and functional."""
+"""
+Verify all cleaned data files are valid and functional.
+
+Status: Active
+Usage: python scripts/verify_data.py
+Output: Console verification of `data/*.json` files
+"""
 
 import json
 from pathlib import Path

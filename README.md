@@ -25,9 +25,15 @@ A project to collect and archive APEGA Salary Survey PDFs for analysis and resea
 
 ### scripts/
 - `scripts/download_pdfs.py` — Download available PDFs (2020–2024) from APEGA and Internet Archive.
-- `scripts/scrape_scribd_2024.py` — Scrape and convert Scribd documents to PDF (used for 2024).
 - `scripts/parse_salary_tables.py` — Extract structured salary data from PDFs by career level, profession, organization counts, demographics.
 - `scripts/forecast_salaries.py` — Forecast salary trends through 2030 using polynomial + linear regression.
+- `scripts/generate_reference_tables.py` — Generate Markdown reference tables for forecast outputs.
+- `scripts/analyze_pdf_formats.py` — Diagnostic utility to detect image-based vs text-based PDFs.
+- `scripts/extract_salary_data.py` — Lower-level utility to parse tables and text from PDFs (used by `parse_salary_tables.py`).
+- `scripts/verify_data.py` — Run quick checks to confirm `data/` JSON files are present and valid.
+- `scripts/legacy/` — Archive of older extraction utilities removed from main flow (2021/2024 OCR/manual scripts).
+
+Note: legacy extraction utilities (2021 and 2024 OCR/manual scripts) have been moved to `scripts/legacy/` — they are kept for reference but are not needed in the standard data extraction workflow. Use the active scripts listed above for production operations.
 
 ### data/
 - `data/salary_master.json` — Historical salary data extracted (2020, 2022-2023) by level, profession, organization stats, demographics.
@@ -37,6 +43,12 @@ A project to collect and archive APEGA Salary Survey PDFs for analysis and resea
 ### outputs/
 - `outputs/salary_trends_2020_2030.png` — 4-panel visualization (professional levels, management levels, career progression, growth rates).
 - `outputs/participation_trends.png` — Organizational participation and professional composition trends.
+ - `outputs/salary_overlay_levels.png` — Overlay of every career level (ENG & GEO) across years (historical & forecast).
+ - `outputs/salary_overlay_levels.png` — Overlay of every career level (ENG & GEO) across years (historical & forecast).
+ - `outputs/salary_overlay_eng_levels.png` — All Engineering levels over time (historical & forecast).
+ - `outputs/salary_overlay_geo_levels.png` — All Geoscientist levels over time (historical & forecast).
+ - `outputs/salary_levels_4panel.png` — 2x2 panel: ENG P1-P5, ENG M1-M5, GEO P1-P5, GEO M1-M5.
+- Still very much WIP.
 
 ### requirements.txt
 Python dependencies (requests, beautifulsoup4, PyPDF2, selenium, pdfplumber, pandas, numpy, matplotlib, seaborn, scikit-learn, scipy).
@@ -60,6 +72,17 @@ python -m pip install -r requirements.txt
 ```bash
 python scripts/download_pdfs.py
 ```
+
+### Naming Conventions
+- Scripts: use concise verbs + snake_case. Examples: `download_pdfs.py`, `parse_salary_tables.py`, `forecast_salaries.py`, `generate_reference_tables.py`.  
+	Legacy or archived scripts placed in `scripts/legacy/` (do not run during normal pipeline). 
+
+- PDF files: `docs/YYYY/apega_salary_survey_YYYY.pdf` (standardized naming format)
+- Year data: `data/salary_data_YYYY.json` (one file per recovered year — 2021 and 2024 are manual/archived)
+- Master dataset: `data/salary_master.json` (normalized, used by forecasts)
+- Forecasts: `data/salary_forecasts_2024_2030.json` (forecasts for ENG levels)
+
+Scripts cleanup: legacy/ contains archived scripts that were moved out of the main workflow. Use only scripts in top-level `scripts/` to run the standard pipeline.
 
 ### 4. Extract Salary Data & Generate Forecasts
 ```bash
@@ -110,4 +133,3 @@ python scripts/forecast_salaries.py
 - Removed corrupted 2013–2019 PDF files (HTML corruptions from Wayback captures).
 - Added 2024 salary survey by scraping Scribd document and converting page images to PDF.
 - Standardized file naming and folder structure for consistency.
-

@@ -1,6 +1,10 @@
 """
 Download and manage APEGA salary survey PDFs.
 
+Status: Active
+Usage: python scripts/download_pdfs.py
+Output: Downloads PDFs to `docs/YYYY/apega_salary_survey_YYYY.pdf`
+
 CURRENT STATUS (as of Nov 2025):
 - 2020-2024: Available as apega_salary_survey_YYYY.pdf in docs/YYYY/
 - 2013-2019: Corrupted Wayback snapshots (HTML instead of PDF); documented in docs/2013-2019/README.txt
